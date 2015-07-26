@@ -1,0 +1,7 @@
+## Open GitHub Page : Bookmarklet
+
+Drag and drop this link into your bookmarks bar :-
+
+<a href="javascript: var https = document.URL;var matches = https.split('https://github.com/');if (matches.length <= 1) {document.location = 'https://github.com';} else {matches = matches[1];var username = matches.split('/')[0];var repo = matches.split('/')[1];var newURL = 'https://' + username + '.github.io/' + repo;document.location = newURL;}">Open GH Page</a>
+
+<a href="javascript:%20var%20https%20=%20document.URL;var%20matches%20=%20https.split('https://github.com/');if%20(matches.length%20%3C=%201)%20%7Bdocument.location%20=%20'https://github.com';%7D%20else%20%7Bmatches%20=%20matches%5B1%5D;var%20username%20=%20matches.split('/')%5B0%5D;var%20repo%20=%20matches.split('/')%5B1%5D;var%20newURL%20=%20'https://'%20+%20username%20+%20'.github.io/'%20+%20repo;document.location%20=%20newURL;%7D">Open GH Page (Encoded) </a>
