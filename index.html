@@ -1,7 +1,45 @@
-## Open GitHub Page : Bookmarklet
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <title>Open GitHub Page &middot; Bookmarklet</title>
+    <style media="screen">
+      body {
+        text-align: center;
+        background-color: #DA7635;
+      }
+      .center-transform {
+        position: absolute;
+        top: 40%;
+        left: 50%;
 
-Drag and drop this link into your bookmarks bar :-
+        transform: translate(-50%, -50%);
+      }
+      .footer {
+        position: absolute;
+        bottom: 3px;
+        right: 5px;
 
-<a href="javascript: var https = document.URL;var matches = https.split('https://github.com/');if (matches.length <= 1) {document.location = 'https://github.com';} else {matches = matches[1];var username = matches.split('/')[0];var repo = matches.split('/')[1];var newURL = 'https://' + username + '.github.io/' + repo;document.location = newURL;}">Open GH Page</a>
+        font-size: 22px;
+      }
+      .footer a {
+        color: white;
+      }
+      .footer a:hover {
+        color: darkblue;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="footer">
+      Built by <a href="https://icyflame.github.io/hi">Siddharth Kannan</a>
+    </div>
+    <div class="center-transform">
+      <h1>Drag and drop this link <br>into your bookmarks bar:-</h1>
 
-<a href="javascript:%20var%20https%20=%20document.URL;var%20matches%20=%20https.split('https://github.com/');if%20(matches.length%20%3C=%201)%20%7Bdocument.location%20=%20'https://github.com';%7D%20else%20%7Bmatches%20=%20matches%5B1%5D;var%20username%20=%20matches.split('/')%5B0%5D;var%20repo%20=%20matches.split('/')%5B1%5D;var%20newURL%20=%20'https://'%20+%20username%20+%20'.github.io/'%20+%20repo;document.location%20=%20newURL;%7D">Open GH Page (Encoded) </a>
+      <a class="btn btn-lg btn-primary" href="javascript:%20var%20https%20=%20document.URL;var%20matches%20=%20https.split('https://github.com/');if%20(matches.length%20%3C=%201)%20%7Bdocument.location%20=%20'https://github.com';%7D%20else%20%7Bmatches%20=%20matches%5B1%5D;var%20username%20=%20matches.split('/')%5B0%5D;var%20repo%20=%20matches.split('/')%5B1%5D;var%20newURL%20=%20'https://'%20+%20username%20+%20'.github.io/'%20+%20repo;document.location%20=%20newURL;%7D">Open GH Page</a>
+    </div>
+  </body>
+</html>
